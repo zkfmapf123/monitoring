@@ -4,4 +4,4 @@
 
 ## Todo
 
-    - [ ] use CloudWatch + EC2
+    - [x] use CloudWatch + EC2
