@@ -2,10 +2,6 @@
 
 ## Architecture
 
-![archi](./public/archi.png)
+## Todo
 
-## Telemetry
-
-    - [ ] monitoring
-    - [ ] logging
-    - [ ] tracing
+    - [ ] use CloudWatch + EC2
