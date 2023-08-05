@@ -28,22 +28,14 @@ resource "aws_iam_policy" "ec2_cloudwatch_policy" {
     Version = "2012-10-17"
     Statement = [
       {
-        Action   = "cloudwatch:PutMetricData"
-        Effect   = "Allow"
-        Resource = "*"
-      },
-      {
-        Action   = "logs:CreateLogGroup"
-        Effect   = "Allow"
-        Resource = "*"
-      },
-      {
-        Action   = "logs:CreateLogStream"
-        Effect   = "Allow"
-        Resource = "*"
-      },
-      {
-        Action   = "logs:PutLogEvents"
+        Action = [
+          "ec2:DescribeVolumes",
+          "ec2:DescribeTags",
+          "cloudwatch:PutMetricData",
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents"
+        ]
         Effect   = "Allow"
         Resource = "*"
       }
