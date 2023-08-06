@@ -1,6 +1,4 @@
 {
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "window.title": "[devops-terraforming] ${activeEditorShort}${separator}${rootName}",
   "editor.formatOnSave": true,
   "eslint.format.enable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
